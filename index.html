@@ -4,17 +4,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
     <title> Twitter-clone </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
+
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="./style.css">
 </head>
 <body>
- 
-    
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ <!-- parent division -->
+ <div class="twitter clone">
+
+ </div>
+
+ <!-- side-bar  section -->
+ <div class="sidebar">
+  <i class=" fab fa-twitter"> </i>
+
+  <div class="sidebar-options active">
+    <span class="material-icons"> home</span>
+    <h2>Home</h2>
+  </div>
+
+  <div class="sidebar-options">
+    <span class="material-icons"> tag</span>
+    <h3>Explore</h3>
+  </div>
+
+
+ <div class="sidebar-options">
+  <span class="material-icons"> notifications_none</span>
+  <h3>Notifications</h3>
+</div>
+
+<div class="sidebar-options">
+  <span class="material-icons"> mail_outline</span>
+  <h3>Messages</h3>
+</div>
+
+<div class="sidebar-options">
+  <span class="material-icons"> bookmark_border</span>
+  <h3>Bookmarks</h3>
+</div>
+
+<div class="sidebar-options">
+  <span class="material-icons"> list_alt</span>
+  <h3>List</h3>
+</div>
+
+<div class="sidebar-options">
+  <span class="material-icons"> perm_identity</span>
+  <h3>Profile</h3>
+</div>
+
+<div class="sidebar-options">
+  <span class="material-icons"> more_horiz</span>
+  <h3>More</h3>
+</div>
+
+<button class="sidebar_tweet"> Tweet </button>
+
+<div class="sidebar-footer">
+  <img src="https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj " alt=" profile picture">
+  <h3> Nkosi Engel</h3>
+</div>
+</div>
+    <!-- sidebar ends -->
+
+ <!-- timeline header-section -->
+<div class="feed">
+  <div class="feed-header">
+    <h2>Home</h2>
+  </div>
+
+<div class="tweet-box">
+<form>
+  <div class="tweetbox-input">
+    <img src="https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj " alt=" profile picture">
+    <input type="text" placeholder=" What's happening" />
+  </div>
+  <button class="tweetbox"> Tweet </button>
+</form>
+</div>
+
+<div class="tweet-tab">
+  <button>Show 10 Tweets </button>
+</div> 
+<!-- timeline header-section ends -->
+
+
+<!-- timeline post-section -->
+
+<div class="post">
+
+  <div class="post-avator">
+    <img src=" https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj" alt=" profile pic image">
+  </div>
+
+<div class="postbody">
+  <div class="post-header">
+    <div class="header-text">
+      <h3> Nkosi Engel
+      <span class="special-header">
+        <span class="material-icons badge"> verified </span>@NkosiEngel August5
+      </span>
+    </h3>
+    </div>
+
+  <div class="header-discription">
+<p>SA’s top academics received recognition from NRF for their work </p>
+    </div>
+ </div>
+
+ 
+  <img src=" https://pbs.twimg.com/card_img/1556979273759596548/gkB3_XzP?format=jpg&name=small " alt=" post image">
+
+  <div class="post-footer">
+    <span class=" material-icons none"> palette </span>
+    <span class=" material-icons none"> repeat </span>
+    <span class=" material-icons none"> favorite border </span>
+    <span class=" material-icons none"> share </span>
+  </div>
+
+
+</div>
+</div>
+<!-- timeline post-section ends -->
+
+
+
+<!-- timeline post-section -->
+
+<div class="post">
+
+  <div class="post-avator">
+    <img src=" https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj" alt=" profile pic image">
+  </div>
+
+<div class="postbody">
+  <div class="post-header">
+    <div class="header-text">
+      <h3> Nkosi Engel
+      <span class="special-header">
+        <span class="material-icons badge"> verified </span>@NkosiEngel August5
+      </span>
+    </h3>
+    </div>
+
+  <div class="header-discription">
+<p>President of South Africa receiving a token of appreciation last night in Cuba </p>
+    </div>
+ </div>
+
+ 
+  <img src=" https://pbs.twimg.com/media/FZtVBHUXEAEy7PY?format=jpg&name=360x360 " alt=" post image">
+
+  <div class="post-footer">
+    <span class=" material-icons none"> palette </span>
+    <span class=" material-icons none"> repeat </span>
+    <span class=" material-icons none"> favorite border </span>
+    <span class=" material-icons none"> share </span>
+  </div>
+
+
+</div>
+</div>
+<!-- timeline post-section ends -->
+
+
+
+<!-- timeline post-section -->
+
+<div class="post">
+
+  <div class="post-avator">
+    <img src=" https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj" alt=" profile pic image">
+  </div>
+
+<div class="postbody">
+  <div class="post-header">
+    <div class="header-text">
+      <h3> Nkosi Engel
+      <span class="special-header">
+        <span class="material-icons badge"> verified </span>@NkosiEngel 7h
+      </span>
+    </h3>
+    </div>
+
+  <div class="header-discription">
+<p>South African President appreciated by the UN in Cuba </p>
+    </div>
+ </div>
+
+ 
+  <img src=" https://pbs.twimg.com/media/FYqw_5_XgAANLLO?format=jpg&name=360x360 " alt=" post image">
+
+  <div class="post-footer">
+    <span class=" material-icons none"> palette </span>
+    <span class=" material-icons none"> repeat </span>
+    <span class=" material-icons none"> favorite border </span>
+    <span class=" material-icons none"> share </span>
+  </div>
+
+
+
+</div>
+</div>
+<!-- timeline post-section ends -->
+
+</div>
+
+<!-- Trending-section starts -->
+
+<div class="trends">
+
+<div class="search">
+  <!-- <span class="material-icons widgets"> search </span> -->
+<input type="text" placeholder=" Search Twitter ">
+</div>
+
+
+<div  class="trending">
+
+  <h1 class="h1-tittle"> Trending for you </h1> 
+<div class="trending-items">
+<div class="item-category">
+  <p> Trending in South Africa </p>
+  <!-- <i class="material-icons outlined"> more horiz </i> -->
+</div>
+<span> #Woman'sMonth</span>
+<sp> 100K Tweets </p>
+</div>
+
+<div class="trending-items">
+  <div class="item-category">
+    <p> Trending in South Africa </p>
+    <!-- <i class="material-icons outlined"> more horiz </i> -->
+  </div>
+  <span>LoveLife</span>
+  <sp> 2K Tweets </p>
+  </div>
+
+  <div class="trending-items">
+    <div class="item-category">
+      <p> Trending in South Africa </p>
+      <!-- <i class="material-icons outlined"> more horiz </i> -->
+    </div>
+    <span> #NRF</span>
+    <sp> 1M Tweets </p>
+  </div>
+
+  <div class="trending-items">
+      <div class="item-category">
+        <p> Trending in South Africa </p>
+        <!-- <i class="material-icons outlined"> more horiz </i> -->
+      </div>
+      <span> NSFAs</span>
+      <sp> 50K Tweets </p>
+  </div>
+
+  <div class="trending-items">
+    <div class="item-category">
+      <p> Trending in South Africa </p>
+      <!-- <i class="material-icons outlined"> more horiz </i> -->
+    </div>
+    <span> #FeesMustFall</span>
+    <sp> 600 Tweets </p>
+    </div>
+
+  <div class="trending-items">
+      <div class="item-category">
+        <p> Trending in South Africa </p>
+        <!-- <i class="material-icons outlined"> more horiz </i> -->
+      </div>
+      <span> #justiceForWeman</span>
+      <sp> 4,569 Tweets </p>
+  </div>    
+ <p class="show"> Show more </p>
+</div>
+
+
+
+<div class="follow"> 
+  <h1 class="h1-tittle"> Who to follow </h1>
+  <div class="follow-profile">
+    <img class="tweet-img" src=" https://yt3.ggpht.com/KbO8eAnDyajrEcuu_SLkQG0ecKnWOjrzry1YKRgH3r6Vq6Nf_8kXrag9KGUQQXw2zHatK3Kb6Vs=s68-c-k-c0x00ffffff-no-rj" alt=" who to follow tweet image">
+    <div class="follow-details">
+      <a href=""> SA PoliceServices  </a>
+      <span class="material-icons badge"> verified </span>@SAPoliceService
+    </div>
+    <button class="tweeters-box "> Follow </button>
+  </div>
+
+  <div class="follow-profile">
+    <img class="tweet-img" src="https://yt3.ggpht.com/ytc/AMLnZu9XPl8xzZqsKKG3goK_3JAebM2UjokhVmAvM5k-fb0=s68-c-k-c0x00ffffff-no-rj  " alt=" who to follow tweet image">
+    <div class="follow-details">
+      <a href=""> PublicProtector  </a>
+      <span class="material-icons badge"> verified </span>@SAPublicProtector 
+    </div>
+    <button class="tweeters-box "> Follow </button>
+  </div>
+  <p class="show"> Show more </p>
+</div>
+
+<div class="footer">
+<p>Terms of Service   Privacy Policy   Cookie Policy
+   Accessibility   Ads   info   More
+  © 2022 Twitter,  Zaio clone. </p>
+</div>
+</div> 
+  
+  <!-- Trending-section Ends --> 
+
 </body>
 </html>
