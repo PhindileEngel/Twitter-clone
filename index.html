@@ -1,328 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
     <title> Twitter-clone </title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet">
 
       <link rel="stylesheet" href="./style.css">
-</head>
-<body>
 
- <!-- parent division -->
- <div class="twitter clone">
+      <script src="https://kit.fontawesome.com/b310f69dc9.js" crossorigin="anonymous"></script>
 
- </div>
+  </head>
 
- <!-- side-bar  section -->
- <div class="sidebar">
-  <i class=" fab fa-twitter"> </i>
+  <body>
 
-  <div class="sidebar-options active">
-    <span class="material-icons"> home</span>
-    <h2>Home</h2>
-  </div>
+    <!-- side-bar  section -->
 
-  <div class="sidebar-options">
-    <span class="material-icons"> tag</span>
-    <h3>Explore</h3>
-  </div>
+    <header>
+      <div class="nav-links">
+        <a href="">
+          <i class="fab fa-twitter"> </i>
+        </a>
 
+        <a href="">
 
- <div class="sidebar-options">
-  <span class="material-icons"> notifications_none</span>
-  <h3>Notifications</h3>
-</div>
+          <img class="material" src="./asset/svg-home.png" alt=" ">
+          <span style="font-weight: 600;">Home</span>
+        </a>
 
-<div class="sidebar-options">
-  <span class="material-icons"> mail_outline</span>
-  <h3>Messages</h3>
-</div>
+        <a href="">
+          <img src="./asset/explore-image.png" alt="">
+          <span>Explore</span>
+        </a>
 
-<div class="sidebar-options">
-  <span class="material-icons"> bookmark_border</span>
-  <h3>Bookmarks</h3>
-</div>
+        <a href="">
+          <img src="./asset/svg-notification.png" alt="">
+          <span> Notifications </span>
+        </a>
 
-<div class="sidebar-options">
-  <span class="material-icons"> list_alt</span>
-  <h3>List</h3>
-</div>
+        <a href="">
+          <img src="./asset/svg-message.png" alt="">
+          <span> Messages </span>
+        </a>
 
-<div class="sidebar-options">
-  <span class="material-icons"> perm_identity</span>
-  <h3>Profile</h3>
-</div>
+        <a href="">
+          <img src="./asset/svg-bookmarks.png" alt="">
+          <span>Bookmarks</span>
+        </a>
 
-<div class="sidebar-options">
-  <span class="material-icons"> more_horiz</span>
-  <h3>More</h3>
-</div>
+        <a href="">
+          <img src="./asset/svg-list.png" alt="">
+          <span>Lists</span>
+        </a>
 
-<button class="sidebar_tweet"> Tweet </button>
+        <a href="">
+          <img src="./asset/svg-profile.png" alt="">
+          <span>Profile</span>
+        </a>
 
-<div class="sidebar-footer">
-  <img src="https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj " alt=" profile picture">
-  <h3> Nkosi Engel</h3>
-</div>
-</div>
-    <!-- sidebar ends -->
-
- <!-- timeline header-section -->
-<div class="feed">
-  <div class="feed-header">
-    <h2>Home</h2>
-  </div>
-
-<div class="tweet-box">
-<form>
-  <div class="tweetbox-input">
-    <img src="https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj " alt=" profile picture">
-    <input type="text" placeholder=" What's happening" />
-  </div>
-  <button class="tweetbox"> Tweet </button>
-</form>
-</div>
-
-<div class="tweet-tab">
-  <button>Show 10 Tweets </button>
-</div> 
-<!-- timeline header-section ends -->
+        <a href="">
+          <img src="./asset/svg-more.png" alt="">
+          <span> More </span>
+        </a>
 
 
-<!-- timeline post-section -->
+        <div class="twee-button">
+          <button class="tweet-button"> Tweet </button>
+        </div>
 
-<div class="post">
-
-  <div class="post-avator">
-    <img src=" https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj" alt=" profile pic image">
-  </div>
-
-<div class="postbody">
-  <div class="post-header">
-    <div class="header-text">
-      <h3> Nkosi Engel
-      <span class="special-header">
-        <span class="material-icons badge"> verified </span>@NkosiEngel August5
-      </span>
-    </h3>
-    </div>
-
-  <div class="header-discription">
-<p>SA’s top academics received recognition from NRF for their work </p>
-    </div>
- </div>
-
- 
-  <img src=" https://pbs.twimg.com/card_img/1556979273759596548/gkB3_XzP?format=jpg&name=small " alt=" post image">
-
-  <div class="post-footer">
-    <span class=" material-icons none"> palette </span>
-    <span class=" material-icons none"> repeat </span>
-    <span class=" material-icons none"> favorite border </span>
-    <span class=" material-icons none"> share </span>
-  </div>
-
-
-</div>
-</div>
-<!-- timeline post-section ends -->
-
-
-
-<!-- timeline post-section -->
-
-<div class="post">
-
-  <div class="post-avator">
-    <img src=" https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj" alt=" profile pic image">
-  </div>
-
-<div class="postbody">
-  <div class="post-header">
-    <div class="header-text">
-      <h3> Nkosi Engel
-      <span class="special-header">
-        <span class="material-icons badge"> verified </span>@NkosiEngel August5
-      </span>
-    </h3>
-    </div>
-
-  <div class="header-discription">
-<p>President of South Africa receiving a token of appreciation last night in Cuba </p>
-    </div>
- </div>
-
- 
-  <img src=" https://pbs.twimg.com/media/FZtVBHUXEAEy7PY?format=jpg&name=360x360 " alt=" post image">
-
-  <div class="post-footer">
-    <span class=" material-icons none"> palette </span>
-    <span class=" material-icons none"> repeat </span>
-    <span class=" material-icons none"> favorite border </span>
-    <span class=" material-icons none"> share </span>
-  </div>
-
-
-</div>
-</div>
-<!-- timeline post-section ends -->
-
-
-
-<!-- timeline post-section -->
-
-<div class="post">
-
-  <div class="post-avator">
-    <img src=" https://yt3.ggpht.com/n0eKQgrwkzlVCaZGktGW5BFB4m-9BIUJpF7aTb2szkn6cKggIMjWT9p1B2iDQ8nuc-NdYPmz5Q=s68-c-k-c0x00ffffff-no-rj" alt=" profile pic image">
-  </div>
-
-<div class="postbody">
-  <div class="post-header">
-    <div class="header-text">
-      <h3> Nkosi Engel
-      <span class="special-header">
-        <span class="material-icons badge"> verified </span>@NkosiEngel 7h
-      </span>
-    </h3>
-    </div>
-
-  <div class="header-discription">
-<p>South African President appreciated by the UN in Cuba </p>
-    </div>
- </div>
-
- 
-  <img src=" https://pbs.twimg.com/media/FYqw_5_XgAANLLO?format=jpg&name=360x360 " alt=" post image">
-
-  <div class="post-footer">
-    <span class=" material-icons none"> palette </span>
-    <span class=" material-icons none"> repeat </span>
-    <span class=" material-icons none"> favorite border </span>
-    <span class=" material-icons none"> share </span>
-  </div>
-
-
-
-</div>
-</div>
-<!-- timeline post-section ends -->
-
-</div>
-
-<!-- Trending-section starts -->
-
-<div class="trends">
-
-<div class="search">
-  <!-- <span class="material-icons widgets"> search </span> -->
-<input type="text" placeholder=" Search Twitter ">
-</div>
-
-
-<div  class="trending">
-
-  <h1 class="h1-tittle"> Trending for you </h1> 
-<div class="trending-items">
-<div class="item-category">
-  <p> Trending in South Africa </p>
-  <!-- <i class="material-icons outlined"> more horiz </i> -->
-</div>
-<span> #Woman'sMonth</span>
-<sp> 100K Tweets </p>
-</div>
-
-<div class="trending-items">
-  <div class="item-category">
-    <p> Trending in South Africa </p>
-    <!-- <i class="material-icons outlined"> more horiz </i> -->
-  </div>
-  <span>LoveLife</span>
-  <sp> 2K Tweets </p>
-  </div>
-
-  <div class="trending-items">
-    <div class="item-category">
-      <p> Trending in South Africa </p>
-      <!-- <i class="material-icons outlined"> more horiz </i> -->
-    </div>
-    <span> #NRF</span>
-    <sp> 1M Tweets </p>
-  </div>
-
-  <div class="trending-items">
-      <div class="item-category">
-        <p> Trending in South Africa </p>
-        <!-- <i class="material-icons outlined"> more horiz </i> -->
       </div>
-      <span> NSFAs</span>
-      <sp> 50K Tweets </p>
-  </div>
 
-  <div class="trending-items">
-    <div class="item-category">
-      <p> Trending in South Africa </p>
-      <!-- <i class="material-icons outlined"> more horiz </i> -->
-    </div>
-    <span> #FeesMustFall</span>
-    <sp> 600 Tweets </p>
-    </div>
 
-  <div class="trending-items">
-      <div class="item-category">
-        <p> Trending in South Africa </p>
-        <!-- <i class="material-icons outlined"> more horiz </i> -->
+      <div class="main-account">
+
+        <a href="">
+          <img class="tweet-img"
+            src="https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+            alt=" profile pic image">
+          <div class="account-details">
+            <span class="account-name"> Engel Nkosi </span>
+            <span class="account-handler">@EngelNkosi</span>
+          </div>
+          <i class="material-icons outlined">more_horiz</i>
+        </a>
       </div>
-      <span> #justiceForWeman</span>
-      <sp> 4,569 Tweets </p>
-  </div>    
- <p class="show"> Show more </p>
-</div>
+
+    </header>
+
+    <!-- side-bar section Ends -->
+
+
+    <!-- Timeline-section -->
+    <main>
+      <div class="main-flex">
+        <div class="main-feed">
+          <div class="home-bar">
+            <span> Home </span>
+            <img src="./asset/svg-star.png" alt="">
+          </div>
+
+          <div class="new-tweet">
+            <img class="tweet-img"
+              src="https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
+            <div class="new-tweet-details">
+              <input type="text" placeholder="What's happening?">
+              <div class="new-tweet-actions">
+
+                <ul>
+                  <li>
+                    <span class="material-icons"> image </span>
+                  </li>
+
+                  <li>
+                    <span class="material-icons"> gif_box </span>
+                  </li>
+
+                  <li>
+                    <span class="material-icons"> align_horizontal_left </span>
+                  </li>
+
+                  <li>
+                    <span class="material-icons"> sentiment_satisfied </span>
+                  </li>
+
+                  <li>
+                    <span class="material-icons"> pending_actions </span>
+                  </li>
+
+                  <li>
+                    <span class="material-icons"> location_on </span>
+                  </li>
+                </ul>
+                <button class="tweet-button"> Tweet </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="shows-tweets">
+            <span> Show 32 Tweets </span>
+          </div>
+
+          <div class="feed-tweet">
+            <img class="tweeta-img"
+              src="https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
+
+            <div class="feed-tweet-details">
+              <div class="tweeter-details">
+                <a href="" class="tweeter-name">
+                  Engel Nkosi
+                  <span class="special-header">
+                    <span class="material-icons none"> verified </span>
+                    <span class="twitter-handle">@EngelNkosi. 5h </span>
+                  </span>
+                </a>
+                <i class="material-icons outlineds"> more_horiz</i>
+              </div>
+
+              <div class="tweet-text">
+                <p> Not in our hospitals! The sick and dying are being turned away from Kalafong hospital based on
+                  appearance and accent. Operation Dudula vigilantes are camped outside the hospital preventing patients
+                  from getting help and the police are simply watching. #702Breakfast </p>
+              </div>
+
+              <div class="tweet-icons">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgsi">
+                  <g>
+                    <path
+                      d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                    </path>
+                  </g>
+                </svg>
 
 
 
-<div class="follow"> 
-  <h1 class="h1-tittle"> Who to follow </h1>
-  <div class="follow-profile">
-    <img class="tweet-img" src=" https://yt3.ggpht.com/KbO8eAnDyajrEcuu_SLkQG0ecKnWOjrzry1YKRgH3r6Vq6Nf_8kXrag9KGUQQXw2zHatK3Kb6Vs=s68-c-k-c0x00ffffff-no-rj" alt=" who to follow tweet image">
-    <div class="follow-details">
-      <a href=""> SA PoliceServices  </a>
-      <span class="material-icons badge"> verified </span>@SAPoliceService
-    </div>
-    <button class="tweeters-box "> Follow </button>
-  </div>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class=" svgs ">
+                  <g>
+                    <path
+                      d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                    </path>
+                    <path
+                      d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                    </path>
+                  </g>
+                </svg>
 
-  <div class="follow-profile">
-    <img class="tweet-img" src="https://yt3.ggpht.com/ytc/AMLnZu9XPl8xzZqsKKG3goK_3JAebM2UjokhVmAvM5k-fb0=s68-c-k-c0x00ffffff-no-rj  " alt=" who to follow tweet image">
-    <div class="follow-details">
-      <a href=""> PublicProtector  </a>
-      <span class="material-icons badge"> verified </span>@SAPublicProtector 
-    </div>
-    <button class="tweeters-box "> Follow </button>
-  </div>
-  <p class="show"> Show more </p>
-</div>
+              </div>
+            </div>
+          </div>
 
-<div class="footer">
-<p>Terms of Service   Privacy Policy   Cookie Policy
-   Accessibility   Ads   info   More
-  © 2022 Twitter,  Zaio clone. </p>
-</div>
-</div> 
-  
-  <!-- Trending-section Ends --> 
+          <div class="feed-tweet">
+            <img class="tweeta-img"
+              src="https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
 
-</body>
+            <div class="feed-tweet-details">
+              <div class="tweeter-details">
+                <a href="" class="tweeter-name">
+                  Engel Nkosi
+                  <span class="special-header">
+                    <span class="material-icons none"> verified </span>
+                    <span class="twitter-handle">@EngelNkosi. 8d </span>
+                  </span>
+                </a>
+                <i class="material-icons outlineds"> more_horiz</i>
+              </div>
+
+              <div class="tweet-text">
+                <p>And when you pray tonight.. pray to let go off the fear of unknown. Life is for risk takers.. living
+                  is a risk already, from the moment you get out of your house. Now you need to shake off that fear
+                  because it’s the only thing standing in your way. Rather fail and learn..</p>
+              </div>
+
+
+              <div class="tweet-icons">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgsi">
+                  <g>
+                    <path
+                      d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                    </path>
+                  </g>
+                </svg>
+
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class=" svgs ">
+                  <g>
+                    <path
+                      d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                    </path>
+                    <path
+                      d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="feed-tweet">
+            <img class="tweeta-img"
+              src="https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
+
+            <div class="feed-tweet-details">
+              <div class="tweeter-details">
+                <a href="" class="tweeter-name">
+                  Engel Nkosi
+                  <span class="special-header">
+                    <span class="material-icons none"> verified </span>
+                    <span class="twitter-handle">@EngelNkosi. 10h </span>
+                  </span>
+                </a>
+                <i class="material-icons outlineds"> more_horiz</i>
+              </div>
+
+              <div class="tweet-text">
+                <p> Miss South Africa 2022-2023: Congradulations to our very own. Representing the batsongas wena mu
+                  Gurl </p>
+              </div>
+
+              <!-- <img class="past-img" src= "https://pbs.twimg.com/media/FaEWjvYXoAUj9b2?format=jpg&name=small" alt=" timeline post image"> -->
+
+              <div class="tweet-icons">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgsi">
+                  <g>
+                    <path
+                      d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                    </path>
+                  </g>
+                </svg>
+
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class=" svgs ">
+                  <g>
+                    <path
+                      d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                    </path>
+                    <path
+                      d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="feed-tweet">
+            <img class="tweeta-img"
+              src="https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
+
+            <div class="feed-tweet-details">
+              <div class="tweeter-details">
+                <a href="" class="tweeter-name">
+                  Engel Nkosi
+                  <span class="special-header">
+                    <span class="material-icons none"> verified </span>
+                    <span class="twitter-handle">@EngelNkosi. 6h </span>
+                  </span>
+                </a>
+                <i class="material-icons outlineds"> more_horiz</i>
+              </div>
+
+              <div class="tweet-text">
+                <p>2022 is almost up, for the upcoming year i will not be making any new years resolutions. imagine me
+                  making promises to myself then turn around and disapoint myself for not meeting my own promises. i
+                  mean how do i then expect other people to keep the promises made to me? lols just-jocking.</p>
+              </div>
+
+
+              <div class="tweet-icons">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgsi">
+                  <g>
+                    <path
+                      d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                    </path>
+                  </g>
+                </svg>
+
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class=" svgs ">
+                  <g>
+                    <path
+                      d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                    </path>
+                    <path
+                      d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+
+          <div class=" feed-tweet">
+            <img class="tweeta-img"
+              src=" https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
+
+            <div class="feed-tweet-details">
+              <div class="tweeter-details">
+                <a href="" class="tweeter-name">
+                  Engel Nkosi
+                  <span class="special-header">
+                    <span class="material-icons none"> verified </span>
+                    <span class="twitter-handle">@EngelNkosi.2d </span>
+                  </span>
+                </a>
+                <i class="material-icons outlineds"> more_horiz</i>
+              </div>
+
+              <div class="tweet-text">
+                <p>Looking for developers in my areas. if around Cape Town. let's connect </p>
+              </div>
+
+
+              <div class="tweet-icons">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgsi">
+                  <g>
+                    <path
+                      d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                    </path>
+                  </g>
+                </svg>
+
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class=" svgs ">
+                  <g>
+                    <path
+                      d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                    </path>
+                    <path
+                      d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="feed-tweet">
+            <img class="tweeta-img"
+              src=" https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj "
+              alt=" profile pic image">
+
+            <div class="feed-tweet-details">
+              <div class="tweeter-details">
+                <a href="" class="tweeter-name">
+                  Engel Nkosi
+                  <span class="special-header">
+                    <span class="material-icons none"> verified </span>
+                    <span class="twitter-handle">@EngelNkosi.4d </span>
+                  </span>
+                </a>
+                <i class="material-icons outlineds"> more_horiz</i>
+              </div>
+
+              <div class="tweet-text">
+                <p> Meet Margaret Hamilton, The Woman Who Took Mankind To The Moon. She Is Standing Beside The Code She
+                  Created To Program The Computer Systems On The Apollo 11 Spacecraft, 1969 </p>
+              </div>
+
+              <img class="past-img" src=" https://pbs.twimg.com/media/Fa3Z44KUUAIyl0A?format=jpg&name=small"
+                alt=" post image">
+
+
+              <div class="tweet-icons">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgs">
+                  <g>
+                    <path
+                      d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                    </path>
+                  </g>
+                </svg>
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="svgsi">
+                  <g>
+                    <path
+                      d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                    </path>
+                  </g>
+                </svg>
+
+
+
+                <svg viewBox="0 0 24 24" aria-hidden="true" class=" svgs ">
+                  <g>
+                    <path
+                      d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                    </path>
+                    <path
+                      d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Timeline-section Ends -->
+
+
+        <!-- Trending section -->
+
+        <div class="side-feed">
+          <div class=" search">
+            <!-- <span class="material-icons searchIcon"> search </span> -->
+            <input type="text" placeholder=" Search Twitter">
+          </div>
+
+          <div class="trending">
+            <h1 class="h1-tittle"> Trends for you </h1>
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Trending in South Africa </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend"> #GogoMaweni</p>
+              <span>2k Tweets</span>
+            </div>
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Trending in South Africa </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend"> #Moneoa</p>
+              <span>21.687 Tweets</span>
+            </div>
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Music. Trends </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend"> #BigZulu</p>
+              <span>6.254 Tweets</span>
+            </div>
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Trending in South Africa </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend"> SAIdols</p>
+              <span>21K Tweets</span>
+            </div>
+
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Trending in South Africa </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend">Pastor Zondo</p>
+              <span>385 Tweets</span>
+            </div>
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Sport. Trends </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend">Shabalala Simphiwe</p>
+              <span>855K Tweets</span>
+            </div>
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Politics. Trends </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend"> #EFF </p>
+              <span>385 Tweets</span>
+            </div>
+
+            <div class="trending-items">
+              <div class="item-category">
+                <span> Trending in South Africa </span>
+                <i class="material-icons"> more_horiz </i>
+              </div>
+              <p class="trend">Pastor Zondo</p>
+              <span>385 Tweets</span>
+            </div>
+            <span class="more"> Show more </span>
+          </div>
+
+          <div class="follow">
+            <h1 class="h1-tittle"> Who to follow </h1>
+            <div class="follow-profile">
+              <img class="tweeta-img"
+                src=" https://pbs.twimg.com/profile_images/1529107170448523264/q3VwEx38_400x400.jpg "
+                alt=" who to follow image ">
+
+              <div class="follow-details">
+                <a href=""> BBC.NEWS</a>
+                <span>@BBC.World </span>
+              </div>
+              <span class="material-icons none"> verified </span>
+              <button class="tweet-button "> Follow </button>
+            </div>
+
+            <div class="follow-profile">
+              <img class="tweeta-img"
+                src=" https://pbs.twimg.com/profile_images/1468896606137294849/W67rWuxn_400x400.jpg "
+                alt=" who to follow image ">
+
+              <div class="follow-details">
+                <a href=""> Hollywood</a>
+                <span> </span>
+              </div>
+              <span class="material-icons none"> verified </span>
+              <button class="tweet-button "> Follow </button>
+            </div>
+
+            <div class="follow-profile">
+              <img class="tweeta-img"
+                src=" https://pbs.twimg.com/profile_images/1246467440977932292/Wmlicr4o_400x400.jpg ">
+
+              <div class="follow-details">
+                <a href=""> Huawei.inc </a>
+                <span> @Huawei </span>
+              </div>
+              <span class="material-icons none"> verified </span>
+              <button class="tweet-button "> Follow </button>
+            </div>
+            <span class="more"> Show more </span>
+          </div>
+
+          <div class="footer">
+            <p> Terms of Service
+              Privacy Policy
+              Cookie Policy </p>
+
+            <p> Accessibility
+              Ads info
+              More </p>
+            <p> © 2022 Zaio Twitter clone.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </main>
+
+
+
+
+  </body>
+
 </html>
