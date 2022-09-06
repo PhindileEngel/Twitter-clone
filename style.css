@@ -76,10 +76,10 @@ padding: 8px 8px;
     margin: 0;
     color: #50b7f5;
     font-size: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
-.tweet-icons {
+.tweet-icos {
   padding-bottom: 10px; 
 }
 
@@ -532,7 +532,8 @@ margin: 25px;
 
 .footer p {
     padding: 3px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    align-content: center;  
+    align-content: center;
+    color: gray;  
 }
